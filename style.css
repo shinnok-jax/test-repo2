@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+@font-face {
+    font-family: xolo;
+    src: url("Xolonium-Regular.otf") format("opentype");
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	font-size: 10px;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	height: 150px;
+	padding: 5px;
+	
+}
+.hero {
+	position: relative;
+	background-image: url(https://static.pexels.com/photos/65538/pexels-photo-65538.jpeg);
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	height: 100vh;
+
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.subt {
+	text-align: center;
+}
+.subt h1{
+		font-family: 'xolo', sans-serif;
+		font-size: 5.2rem;
+		color: #4046d0;
+	}
+.logotype-net {
+	font-size: 47px;
+}
+.logotype-rudi {
+	color: #a149a0;
+}
+.text-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.opening-main {
+		font-family: 'roboto', sans-serif;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		font-size: 1.7rem;
+	}
+@media (max-width: 768px) {
+
+	.logotype-rudi {
+		font-size: 4.2rem;
+	}
+	.logotype-net{
+		font-size: 2.2rem;
+	}
+	.gsm {
+		font-size: 4.2rem;
+	}
+	.text-flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	}
+	.opening-main {
+		font-family: 'roboto', sans-serif;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		font-size: 1.7rem;
+	}
+	.hero {
+	position: relative;
+	background-image: url(https://static.pexels.com/photos/65538/pexels-photo-65538.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	text-align: center;
+}
+}
